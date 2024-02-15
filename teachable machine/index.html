@@ -1,0 +1,484 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Openai</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="dark theme icon.zip"></script>
+</head>
+</html>
+  
+</head>
+
+
+    
+  </body>
+  </html>
+
+<header>
+    
+  <h1 class="text-3xl font-bold underline">
+    <header class="text-gray-400 bg-gray-900 body-font">
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+          <a class="flex title-font font-medium items-center text-white mb-4 md:mb-0">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+            </svg>
+            <span class="ml-3 text-xl">
+            <h1 class="sm:text-2xl text-2xl font-medium title-font mb-2 text-white">OPEN AI</h1>
+          </span>
+          </a>
+          <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+            <a class="mr-5 hover:text-white">About</a>
+            <a class="mr-5 hover:text-white">Contact</a>
+            <a class="mr-5 hover:text-white">Log in</a>
+          </nav>
+          <button class="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0">Sign in
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+              <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+          </button>
+        </div>
+      </header>
+  </h1>
+        
+<content>
+
+    <section class="text-gray-400 body-font bg-gray-900">
+        <div class="container px-5 py-24 mx-auto">
+          <div class="flex flex-wrap w-full mb-20">
+            <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
+              <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-white">INTRODUCTION</h1>
+              <div class="h-1 w-20 bg-indigo-500 rounded"></div>
+           
+         
+          </div>
+          
+          <p>The OpenAI API can be applied to virtually any task. We offer a range of models with different capabilities and price points, as well as the ability to fine-tune custom models.</p><br>
+
+
+          
+          <h1 class="sm:text-2xl text-2xl font-medium title-font mb-2 text-white">Resources</h1>
+
+
+ 
+       
+        <ul>
+            <li> Experiment in the playground </li>  
+            <li>Read the API reference</li>
+            <li>Visit the help center</li>
+            <li>View the current API status</li>
+            <li>Check out the OpenAI Developer Forum</li>
+            <li>Learn about our usage policies</li> 
+         
+        
+          
+
+
+            <h1 class="sm:text-2xl text-2xl font-medium title-font mb-2 text-white">Key Concepts</h1>
+          
+           <h5 class="sm:text-2xl text-2xl font-medium title-font mb-2 text-white">Text generation models </h5>
+           
+            
+           <p>OpenAI's text generation models (often referred to as generative pre-trained transformers or "GPT" models for short), like GPT-4 and GPT-3.5, have been trained to understand natural and formal language. Models like GPT-4 allows text outputs in response to their inputs. The inputs to these models are also referred to as "prompts". Designing a prompt is essentially how you "program" a model like GPT-4, usually by providing instructions or some examples of how to successfully complete a task. Models like GPT-4 can be used across a great variety of tasks including content or code generation, summarization, conversation, creative writing, and more. Read more in our introductory text generation guide and in our prompt engineering guide.</p>
+
+           <h5 class="sm:text-2xl text-2xl font-medium title-font mb-2 text-white">Assistants </h5>
+           <p>
+            Assistants refer to entities, which in the case of the OpenAI API are powered by large language models like GPT-4, that are capable of performing tasks for users. These assistants operate based on the instructions embedded within the context window of the model. They also usually have access to tools which allows the assistants to perform more complex tasks like running code or retrieving information from a file. Read more about assistants in our Assistants API Overview.</p>
+            <h5 class="sm:text-2xl text-2xl font-medium title-font mb-2 text-white">Embeddings </h5>
+          <p>
+            An embedding is a vector representation of a piece of data (e.g. some text) that is meant to preserve aspects of its content and/or its meaning. Chunks of data that are similar in some way will tend to have embeddings that are closer together than unrelated data. OpenAI offers text embedding models that take as input a text string and produce as output an embedding vector. Embeddings are useful for search, clustering, recommendations, anomaly detection, classification, and more. Read more about embeddings in our embeddings guide.</p>
+            <h5 class="sm:text-2xl text-2xl font-medium title-font mb-2 text-white">Tokens </h5>
+          <p>
+            Text generation and embeddings models process text in chunks called tokens. Tokens represent commonly occurring sequences of characters. For example, the string " tokenization" is decomposed as " token" and "ization", while a short and common word like " the" is represented as a single token. Note that in a sentence, the first token of each word typically starts with a space character. Check out our tokenizer tool to test specific strings and see how they are translated into tokens. As a rough rule of thumb, 1 token is approximately 4 characters or 0.75 words for English text.
+            
+            One limitation to keep in mind is that for a text generation model the prompt and the generated output combined must be no more than the model's maximum context length. For embeddings models (which do not output tokens), the input must be shorter than the model's maximum context length. The maximum context lengths for each text generation and embeddings model can be found in the model index.</p>
+
+
+            <h1 class="sm:text-2xl text-2xl font-medium title-font mb-2 text-white">QUICK START</h1>
+
+
+            <p>The OpenAI API provides a simple interface for developers to create an intelligence layer in their applications, powered by OpenAI's state of the art models. The Chat Completions endpoint powers ChatGPT and provides a simple way to take text as input and use a model like GPT-4 to generate an output.</p>
+
+            <p>This quickstart is designed to help get your local development environment setup and send your first API request. If you are an experienced developer or want to just dive into using the OpenAI API, the API reference of GPT guide are a great place to start. Throughout this quickstart, you will learn:</p>
+
+
+
+            <ul>
+              <li>How to setup your development environment</li>
+              <li>How to install the latest SDKs</li>
+              <li>Some of the basic concepts of the OpenAI API</li>
+              <li>How to send your first API request</li>
+            </ul>
+
+
+
+
+        </div>
+        <h1 class="sm:text-2xl text-2xl font-medium title-font mb-2 text-white">MODELS</h1>
+        <div class="flex flex-wrap -m-4">
+          <div class="xl:w-1/4 md:w-1/2 p-4">
+            <div class="bg-gray-800 bg-opacity-40 p-6 rounded-lg">
+              <img class="h-40 rounded w-full object-cover object-center mb-6" src="1.jpg" alt="content">
+              <h3 class="tracking-widest text-indigo-400 text-xs font-medium title-font">GO</h3>
+              <h2 class="text-lg text-white font-medium title-font mb-4">GPT-3.5</h2>
+              <p class="leading-relaxed text-base">GPT-3 is a large language model capable of generating realistic text. Learn how it works</p>
+            </div>
+          </div>
+          <div class="xl:w-1/4 md:w-1/2 p-4">
+            <div class="bg-gray-800 bg-opacity-40 p-6 rounded-lg">
+              <img class="h-40 rounded w-full object-cover object-center mb-6" src="2.jpg" alt="content">
+              <h3 class="tracking-widest text-indigo-400 text-xs font-medium title-font">GO</h3>
+              <h2 class="text-lg text-white font-medium title-font mb-4">GPT-3.5 Turbo</h2>
+              <p class="leading-relaxed text-base">A set of models that improve on GPT-3.5 and can understand as well as generate natural language or code</p>
+            </div>
+          </div>
+          <div class="xl:w-1/4 md:w-1/2 p-4">
+            <div class="bg-gray-800 bg-opacity-40 p-6 rounded-lg">
+              <img class="h-40 rounded w-full object-cover object-center mb-6" src="3.jpg" alt="content">
+              <h3 class="tracking-widest text-indigo-400 text-xs font-medium title-font">GO</h3>
+              <h2 class="text-lg text-white font-medium title-font mb-4">GPT-4</h2>
+              <p class="leading-relaxed text-base">GPT-4 is a large multimodal model (accepting text or image inputs and outputting text) that can solve difficult problems </p>
+            </div>
+          </div>
+          <div class="xl:w-1/4 md:w-1/2 p-4">
+            <div class="bg-gray-800 bg-opacity-40 p-6 rounded-lg">
+              <img class="h-40 rounded w-full object-cover object-center mb-6" src="4.jpg" alt="content">
+              <h3 class="tracking-widest text-indigo-400 text-xs font-medium title-font">GO</h3>
+              <h2 class="text-lg text-white font-medium title-font mb-4">GPT-4 Turbo</h2>
+              <p class="leading-relaxed text-base">The latest GPT-4 model intended to reduce cases of “laziness” where the model doesn’t complete a task.</p>
+            </div>
+          </div> <div class="flex flex-wrap -m-4">
+            <div class="xl:w-1/4 md:w-1/2 p-4">
+              <div class="bg-gray-800 bg-opacity-40 p-6 rounded-lg">
+                <img class="h-40 rounded w-full object-cover object-center mb-6" src="6.png" alt="content">
+                <h3 class="tracking-widest text-indigo-400 text-xs font-medium title-font">GO</h3>
+                <h2 class="text-lg text-white font-medium title-font mb-4">Dell-E</h2>
+                <p class="leading-relaxed text-base">A model that can generate and edit images given a natural language prompt</p>
+              </div>
+            </div>
+            <div class="xl:w-1/4 md:w-1/2 p-4">
+              <div class="bg-gray-800 bg-opacity-40 p-6 rounded-lg">
+                <img class="h-40 rounded w-full object-cover object-center mb-6" src="7.jpg" alt="content">
+                <h3 class="tracking-widest text-indigo-400 text-xs font-medium title-font">GO</h3>
+                <h2 class="text-lg text-white font-medium title-font mb-4">TTS</h2>
+                <p class="leading-relaxed text-base">A set of models that can convert text into natural sounding spoken audio</p>
+              </div>
+            </div>
+            <div class="xl:w-1/4 md:w-1/2 p-4">
+              <div class="bg-gray-800 bg-opacity-40 p-6 rounded-lg">
+                <img class="h-40 rounded w-full object-cover object-center mb-6" src="5.jpg" alt="content">
+                <h3 class="tracking-widest text-indigo-400 text-xs font-medium title-font">GO</h3>
+                <h2 class="text-lg text-white font-medium title-font mb-4">Whisper</h2>
+                <p class="leading-relaxed text-base">	A model that can convert audio into text</p>
+              </div>
+            </div>
+            <div class="xl:w-1/4 md:w-1/2 p-4">
+              <div class="bg-gray-800 bg-opacity-40 p-6 rounded-lg">
+                <img class="h-40 rounded w-full object-cover object-center mb-6" src="8.png" alt="content">
+                <h3 class="tracking-widest text-indigo-400 text-xs font-medium title-font">GO</h3>
+                <h2 class="text-lg text-white font-medium title-font mb-4">Moderation</h2>
+                <p class="leading-relaxed text-base">	A model that can convert audio into text</p>
+
+
+
+
+
+                 
+              </div>
+            
+              <section>
+
+      
+      <section>
+
+     
+
+      
+      
+              
+            </div>
+           <br>
+
+
+           <section class="text-gray-400 bg-gray-900 body-font">
+            <div class="container px-5 py-24 mx-auto flex flex-wrap">
+              <div class="flex flex-wrap w-full">
+                <div class="lg:w-2/5 md:w-1/2 md:pr-10 md:py-6">
+                  <div class="flex relative pb-12">
+                    <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
+                      <div class="h-full w-1 bg-gray-800 pointer-events-none"></div>
+                    </div>
+                    <div class="flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative z-10">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                      </svg>
+                    </div>
+                    <div class="flex-grow pl-4">
+                      <h2 class="font-medium title-font text-sm text-white mb-1 tracking-wider">ChatGPT-3.5</h2>
+                      <p class="leading-relaxed">GPT-3 is a large language model capable of generating realistic text. Learn how it works</p>
+                    </div>
+                  </div>
+                  <div class="flex relative pb-12">
+                    <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
+                      <div class="h-full w-1 bg-gray-800 pointer-events-none"></div>
+                    </div>
+                    <div class="flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative z-10">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                      </svg>
+                    </div>
+                    <div class="flex-grow pl-4">
+                      <h2 class="font-medium title-font text-sm text-white mb-1 tracking-wider">ChatGPT-3.5 Turbo</h2>
+                      <p class="leading-relaxed">>A set of models that improve on GPT-3.5 and can understand as well as generate natural language or code.</p>
+                    </div>
+                  </div>
+                  <div class="flex relative pb-12">
+                    <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
+                      <div class="h-full w-1 bg-gray-800 pointer-events-none"></div>
+                    </div>
+                    <div class="flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative z-10">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <circle cx="12" cy="5" r="3"></circle>
+                        <path d="M12 22V8M5 12H2a10 10 0 0020 0h-3"></path>
+                      </svg>
+                    </div>
+                    <div class="flex-grow pl-4">
+                      <h2 class="font-medium title-font text-sm text-white mb-1 tracking-wider"></h2>
+                      <p class="leading-relaxed">The latest GPT-3.5 Turbo model with higher accuracy at responding in requested formats and a fix for a bug which caused a text encoding issue for non-English language function calls. Returns a maximum of 4,096 output tokens</p>
+                    </div>
+                  </div>
+                  <div class="flex relative pb-12">
+                    <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
+                      <div class="h-full w-1 bg-gray-800 pointer-events-none"></div>
+                    </div>
+                    <div class="flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative z-10">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+                        <circle cx="12" cy="7" r="4"></circle>
+                      </svg>
+                    </div>
+                    <div class="flex-grow pl-4">
+                      <h2 class="font-medium title-font text-sm text-white mb-1 tracking-wider">ChatGPT-4</h2>
+                      <p class="leading-relaxed">Snapshot of gpt-4-32k from June 13th 2023 with improved function calling support. This model was never rolled out widely in favor of GPT-4 Turbo.</p>
+                    </div>
+                  </div>
+                  <div class="flex relative">
+                    <div class="flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative z-10">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                        <path d="M22 4L12 14.01l-3-3"></path>
+                      </svg>
+                      
+                    </div>
+                    <div class="flex-grow pl-4">
+                      <h2 class="font-medium title-font text-sm text-white mb-1 tracking-wider">ChartGPT-Torbo</h2>
+                      <p class="leading-relaxed">GPT-4 Turbo model featuring improved instruction following, JSON mode, reproducible outputs, parallel function calling, and more. Returns a maximum of 4,096 output tokens. This preview model is not yet suited for production traffic.</p>
+                    </div>
+                  </div>
+                </div>
+                <img class="lg:w-3/5 md:w-1/2 object-cover object-center rounded-lg md:mt-0 mt-12" src="9.png" alt="step">
+              </div>
+            </div>
+          </section>
+          <section>
+          
+          </section>
+
+            <p</p>
+
+
+            <ul>
+              <li><h1 class="sm:text-2xl text-2xl font-medium title-font mb-2 text-white">Tutorials</h1></li>
+
+
+            <ol>
+              <li>Get started with the OpenAI API by building real AI apps step by step.</li>
+            
+            
+           <ul>
+            <li>Website Q&A with Embeddings
+              Learn how to build an AI that can answer questions about your website.</li>
+            <li>Meeting minutes transcription with Whisper
+              Learn how to create an automated meeting minutes generator with Whisper and GPT-4.</li>
+              <li>Coming soon
+                Learn how to build and deploy an AI chat bot that understands multiple knowledge bases. </li>
+           </ul>
+
+
+          
+            <h1 class="sm:text-2xl text-2xl font-medium title-font mb-2 text-white">ASSISTANTS API</h1>
+           
+      
+      <p>The Assistants API allows you to build AI assistants within your own applications. An Assistant has instructions and can leverage models, tools, and knowledge to respond to user queries. The Assistants API currently supports three types of tools: Code Interpreter, Retrieval, and Function calling. In the future, we plan to release more OpenAI-built tools, and allow you to provide your own tools on our platform.</p>
+     
+    <p>You can explore the capabilities of the Assistants API using the Assistants playground or by building a step-by-step integration outlined in this guide. At a high level, a typical integration of the Assistants API has the following flow:</p>
+
+
+
+
+
+
+
+
+
+
+           <ul>
+             <li>Create an Assistant in the API by defining its custom instructions and picking a model. If helpful, enable tools like Code Interpreter, Retrieval, and Function calling.</li>
+             <li>Create a Thread when a user starts a conversation.</li>
+             <li>Create a Thread when a user starts a conversation.</li>
+             <li>Run the Assistant on the Thread to trigger responses. This automatically calls the relevant tools.</li><br>
+             
+             
+
+
+             <h1 class="sm:text-2xl text-2xl font-medium title-font mb-2 text-white">CHATGPT</h1>
+
+
+
+
+
+           
+       <p>GPTs provide the ability to deeply customize ChatGPT for specific use cases along with custom capabilities. You can create a GPT that:
+       </p>
+      
+
+
+
+
+       <ul>
+        <li>Has custom instructions which determine the way the GPT interacts with users</li>
+        <li>Includes tools like browsing, DALL·E, and Code Interpreter</li>
+        <li>Comes with preset starter prompts for new and returning users</li>
+        <li>Has custom actions which allow you to connect the GPT to APIs</li>
+        
+
+        <h1 class="sm:text-2xl text-2xl font-medium title-font mb-2 text-white">Text generation models</h1>
+
+
+        <p>OpenAI's text generation models (often called generative pre-trained transformers or large language models) have been trained to understand natural language, code, and images. The models provide text outputs in response to their inputs. The inputs to these models are also referred to as "prompts". Designing a prompt is essentially how you “program” a large language model model, usually by providing instructions or some examples of how to successfully complete a task.</p>
+
+
+
+
+        <section class="text-gray-600 body-font">
+          <div class="container px-5 py-24 mx-auto">
+            <div class="flex flex-wrap -m-4 text-center">
+              <div class="p-4 sm:w-1/4 w-1/2">
+                <h2 class="title-font font-medium sm:text-4xl text-3xl text-white-900">15.9K</h2>
+                <p class="leading-relaxed">Users</p>
+              </div>
+              <div class="p-4 sm:w-1/4 w-1/2">
+                <h2 class="title-font font-medium sm:text-4xl text-3xl text-white-900">8.9k</h2>
+                <p class="leading-relaxed">Subscribes</p>
+              </div>
+              <div class="p-4 sm:w-1/4 w-1/2">
+                <h2 class="title-font font-medium sm:text-4xl text-3xl text-white-900">3.2k</h2>
+                <p class="leading-relaxed">Downloads</p>
+              </div>
+              <div class="p-4 sm:w-1/4 w-1/2">
+                <h2 class="title-font font-medium sm:text-4xl text-3xl text-white-900">10</h2>
+                <p class="leading-relaxed">Products</p>
+              </div>
+            </div>
+          </div>
+
+
+
+          <section class="text-gray-400 bg-gray-900 body-font relative">
+            <div class="container px-5 py-24 mx-auto">
+              <div class="flex flex-col text-center w-full mb-12">
+                <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">Contact Us</h1>
+                <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Form Submit</p>
+              </div>
+              <div class="lg:w-1/2 md:w-2/3 mx-auto">
+                <div class="flex flex-wrap -m-2">
+                  <div class="p-2 w-1/2">
+                    <div class="relative">
+                      <label for="name" class="leading-7 text-sm text-gray-400">Name</label>
+                      <input type="text" id="name" name="name" class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-indigo-500 focus:bg-gray-900 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                    </div>
+                  </div>
+                  <div class="p-2 w-1/2">
+                    <div class="relative">
+                      <label for="email" class="leading-7 text-sm text-gray-400">Email</label>
+                      <input type="email" id="email" name="email" class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-indigo-500 focus:bg-gray-900 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                    </div>
+                  </div>
+                  <div class="p-2 w-full">
+                    <div class="relative">
+                      <label for="message" class="leading-7 text-sm text-gray-400">Message</label>
+                      <textarea id="message" name="message" class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-indigo-500 focus:bg-gray-900 focus:ring-2 focus:ring-indigo-900 h-32 text-base outline-none text-gray-100 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+                    </div>
+                  </div>
+                  <div class="p-2 w-full">
+                    <button class="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Send</button>
+                  </div>
+                  <div class="p-2 w-full pt-8 mt-8 border-t border-gray-800 text-center">
+                    <a class="text-indigo-400">ubaidalam216@email.com</a>
+                    <p class="leading-normal my-5">49 Smith St.
+                      <br>Saint Cloud, MN 56301
+                    </p>
+                    <span class="inline-flex">
+                      <a class="text-gray-500">
+                        <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                          <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                        </svg>
+                      </a>
+                      <a class="ml-4 text-gray-500">
+                        <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                          <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                        </svg>
+                      </a>
+                      <a class="ml-4 text-gray-500">
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                          <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                          <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                        </svg>
+                      </a>
+                      <a class="ml-4 text-gray-500">
+                        <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                          <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                        </svg>
+                      </a>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="text-gray-400 bg-gray-900 body-font">
+            <div class="container px-5 py-24 mx-auto">
+              <div class="xl:w-1/2 lg:w-3/4 w-full mx-auto text-center">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="inline-block w-8 h-8 text-gray-500 mb-8" viewBox="0 0 975.036 975.036">
+                  <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"></path>
+                </svg>
+                <p class="leading-relaxed text-lg">This website was introduce chatgpt and openai in this web i will describe the chatgpt you read this web you get all knowledge about chatgpt and openai </p>
+                <span class="inline-block h-1 w-10 rounded bg-indigo-500 mt-8 mb-6"></span>
+                <h2 class="text-white font-medium title-font tracking-wider text-sm">Muhammad Ubaid Alam</h2>
+                <p class="text-gray-500">Senior Product Designer</p>
+              </div>
+            </div>
+          </section>
+      </section>
+
+
+    <step>
+
+
+
+</content>
+
+
+
+</section>
+
+
+
+
+
+
+</body>
+</html>
